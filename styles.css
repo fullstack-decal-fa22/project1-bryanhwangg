@@ -1,0 +1,38 @@
+.navboard{
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.navboard a {
+    float:left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.author{
+    display:none;
+}
+  .navboard a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navboard a.active {
+    color: white;
+  }
+
+.mainpagebox{
+    display: grid;
+    grid-template-columns: 66% 33%;
+}
+
+  #mainheader{
+    line-height: 2;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

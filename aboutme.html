@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel = "stylesheet" href = "aboutme.css">
+</head>
+<body style = "background-color:#5F8575;">
+    <div class="navboard">
+        <a href ="index.html">Home Page</a>
+        <a href="contactme.html">Contact Me</a>
+        <a href="work.html">Work</a>
+    </div>
+    <div class = "basicgrid">
+        <h2 class = "basic">Some Fun Facts</h2>
+        <p class = "basictext">Hi! My name is Bryan and I'm from Eastvale California. Some of my favorite hobbies are playing tennis and hanging out with friends. My favorite food is sushi and I believe in Cafe 3 supremacy. I also own two cats and a dog!</p>
+        <div class = "petflex">
+            <img src = "salt.jpeg" alt = "Pepper" class = "cats">
+            <img src = "pepper.jpeg" alt = "Salt" class = "cats"> 
+        </div>
+        <button class = "catbutton" type = "button" onclick="alert('I love cats!')">Click if you think my cats are cute!</button>
+        
+        <h3 class = "basic">What Am I Doing Right Now?</h3>
+        <p class = "basictext">Currently I am study computer science at UC Berkeley and am enrolled in Computer Science 61a and Web Development at Berkeley's Full Stack Web Development decal.</p>
+    </div>
+    <form id = "myForm">
+        <label class = "formlabel">Questions?</label>
+        <input class = "mytext" type = "text">
+        <button type = "submit">Submit</button>
+    </form>
+    <script>
+        const myForm = document.getElementById("myForm");
+
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Question has been submitted:");
+        });
+    </script>
+</body>
+</html>
